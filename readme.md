@@ -1,4 +1,4 @@
-# 🐧 Kernel Interface Utility Suite
+<!-- # 🐧 Kernel Interface Utility Suite
 
 > A custom Linux command-line toolkit built from scratch using **native C system calls** — no GNU utilities used.
 
@@ -99,4 +99,135 @@ headx -5 file.txt
 
 ## 📬 Contact
 
-**Your Name** · [LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/your-username)
+**Your Name** · [LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/your-username) -->
+
+
+
+# 🐧 Kernel Interface Utility Suite
+
+> Rebuilding core Linux commands from scratch using native C system calls — exposing how user-space utilities interact with the kernel.
+
+![Language](https://img.shields.io/badge/Language-C-blue)
+![Platform](https://img.shields.io/badge/Platform-Linux-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 📌 Overview
+
+This project reimplements essential Linux commands using **low-level system calls** such as `open()`, `read()`, `write()`, `fork()`, and `exec()` instead of relying on GNU utilities or high-level libraries.
+
+Unlike typical implementations, this project directly interacts with the Linux kernel, providing deeper insight into how standard Unix commands actually work internally.
+
+Each command is postfixed with **`x`** (e.g., `lsx`, `pwdx`) to represent extended/custom implementations and can be optionally added to the system PATH for seamless terminal usage.
+
+---
+
+## 🛠️ Commands Implemented
+
+| Command  | Equivalent | System Calls Used | Description                   |
+| -------- | ---------- | ----------------- | ----------------------------- |
+| `lsx`    | `ls`       | opendir, readdir  | List directory contents       |
+| `pwdx`   | `pwd`      | getcwd            | Print working directory       |
+| `cpx`    | `cp`       | open, read, write | Copy files                    |
+| `mvx`    | `mv`       | rename, unlink    | Move / rename files           |
+| `rmx`    | `rm`       | unlink, rmdir     | Remove files and directories  |
+| `catx`   | `cat`      | open, read, write | Display file contents         |
+| `touchx` | `touch`    | open              | Create empty file             |
+| `chmodx` | `chmod`    | chmod             | Change file permissions       |
+| `statx`  | `stat`     | stat, lstat       | Display file metadata         |
+| `headx`  | `head`     | open, read        | Display first N lines         |
+| `tailx`  | `tail`     | open, read        | Display last N lines          |
+| `wcx`    | `wc`       | read              | Word / line / character count |
+| `mkdirx` | `mkdir`    | mkdir             | Create directory              |
+
+---
+
+## ⚙️ Core System Calls
+
+`open()` · `read()` · `write()` · `close()` · `stat()` · `lstat()` · `mkdir()` · `unlink()` · `rmdir()` · `chmod()` · `fork()` · `exec()` · `wait()` · `opendir()` · `readdir()`
+
+---
+
+## 🧩 Design Philosophy
+
+* Minimal abstraction — staying close to kernel-level behavior
+* One command per module for clarity and maintainability
+* Consistent CLI interface across all utilities
+* Explicit and descriptive error handling
+* Modular and extensible architecture
+
+---
+
+## 🚀 Setup & Usage
+
+### Prerequisites
+
+* GCC compiler
+* Linux environment (tested on Ubuntu)
+
+### Build
+
+```bash
+git clone https://github.com/your-username/kernel-interface-utility-suite.git
+cd kernel-interface-utility-suite
+make
+```
+
+### Optional Installation (Add to PATH)
+
+```bash
+sudo make install
+```
+
+### Run
+
+```bash
+lsx -l
+pwdx
+cpx file1.txt file2.txt
+headx -5 file.txt
+```
+
+---
+
+## 📸 Demo
+
+```bash
+$ lsx -l
+$ pwdx
+$ cpx source.txt destination.txt
+$ catx source.txt
+```
+
+*(Tip: Add a terminal GIF here for stronger visual impact)*
+
+---
+
+## 💡 Key Highlights
+
+* Zero dependency on GNU core utilities
+* Direct interaction with Linux system calls
+* Enhanced error handling with descriptive logs
+* Input validation and robust edge-case handling
+* Modular code structure with reusable utilities
+
+---
+
+## 🎯 Key Learnings
+
+* Bridging user space and kernel space through system calls
+* File descriptor lifecycle and low-level I/O handling
+* Directory traversal using inode and metadata structures
+* Process management using fork–exec model
+* Understanding PATH-based executable resolution
+* Designing scalable system-level utilities in C
+
+---
+
+## 📬 Contact
+
+**Sanket Hajare**
+[LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/your-username)
+
+---
