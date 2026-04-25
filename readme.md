@@ -87,7 +87,7 @@ statx file.txt
 
 ---
 
-## 📸 Demo
+## Demo
 
 ```bash
 $ pwdx
