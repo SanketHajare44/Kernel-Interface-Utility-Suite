@@ -123,12 +123,12 @@ Perms : -rw-r--r--
 
 ## 💡 Key Highlights
 
-- ✅ Zero dependency on GNU coreutils
-- ✅ Direct interaction with Linux kernel via system calls
-- ✅ Enhanced error messages with descriptive logging
-- ✅ Input validation and robust edge-case handling
-- ✅ Modular codebase — one `.c` file per command
-- ✅ Shared utility module for reusable logic
+-  Zero dependency on GNU coreutils
+-  Direct interaction with Linux kernel via system calls
+-  Enhanced error messages with descriptive logging
+-  Input validation and robust edge-case handling
+-  Modular codebase — one `.c` file per command
+-  Shared utility module for reusable logic
 
 ---
 
@@ -168,11 +168,9 @@ Kernel-Interface-Utility-Suite/
 
 ---
 
-## 👤 Author
+## Author
 
 **Sanket Sadashiv Hajare**
 
-[![GitHub](https://img.shields.io/badge/GitHub-SanketHajare44-black?logo=github)](https://github.com/SanketHajare44)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sankethajare-blue?logo=linkedin)](https://www.linkedin.com/in/sankethajare/)
-
----
+GitHub : [Link](https://github.com/SanketHajare44)  
+LinkedIn : [Link](https://www.linkedin.com/in/sankethajare/)
