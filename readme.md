@@ -1,6 +1,6 @@
 # 🐧 Kernel Interface Utility Suite
 
-> Rebuilding core Linux commands from scratch using native C system calls — no GNU utilities, no shortcuts.
+> Rebuilding core Linux commands from scratch using native C system calls
 
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux-orange)
@@ -12,12 +12,15 @@
 
 ## 📌 Overview
 
-Most developers use Linux commands daily — but how many know what happens *inside* them?
-
-This project answers that question by reimplementing **11 core Linux commands entirely from scratch in C**, using raw kernel-level system calls like `open()`, `fork()`, `exec()`, and `stat()` — with zero dependency on GNU coreutils or high-level libraries.
-
-Each command is postfixed with **`x`** (e.g., `lsx`, `pwdx`) to distinguish it as a custom implementation and can be added to the system PATH for direct terminal usage.
-
+This project is a custom-built Kernel Interface Utility Suite that programmatically implements major Linux
+commands using native system calls.
+Instead of relying on existing GNU utilities, we developed our own versions of important commands to understand
+their internal working at the OS level.
+All commands are enhanced with additional features for improved user interaction and customization.
+The executables are integrated into the system path, replacing default utilities for learning purposes, and each
+command is uniquely identified with the postfix letter “x” (e.g., lsx, pwdx, cpx).
+This project demonstrates deep understanding of Linux internals, system calls, file systems, and process
+management.
 ---
 
 ## 🛠️ Commands Implemented
