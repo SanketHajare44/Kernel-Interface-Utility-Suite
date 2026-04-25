@@ -112,8 +112,13 @@ Perms : -rw-r--r--
 
 ## 📸 Demo
 
-![Terminal Demo](assets/demo.png)
+![Terminal Demo](assets/Demo.png)
 ---
+
+## 📸 Demo
+
+### 🔍 Interactive Demo
+[![asciicast](https://asciinema.org/a/jhr4Y4NabjAaesoK.svg)](https://asciinema.org/a/jhr4Y4NabjAaesoK)
 
 ## 💡 Key Highlights
 
