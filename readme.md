@@ -72,11 +72,11 @@ headx -5 file.txt
 
 ## 💡 Key Highlights
 
-- ✅ Zero dependency on GNU coreutils
-- ✅ Enhanced error messages with descriptive logging
-- ✅ Input validation and edge-case handling
-- ✅ Modular design — one `.c` file per command
-- ✅ Shared utility module (`utils.c`) for common logic
+-  Zero dependency on GNU coreutils
+-  Enhanced error messages with descriptive logging
+-  Input validation and edge-case handling
+-  Modular design — one `.c` file per command
+-  Shared utility module (`utils.c`) for common logic
 
 ---
 
@@ -169,8 +169,8 @@ Each command is postfixed with **`x`** (e.g., `lsx`, `pwdx`) to represent extend
 ### Build
 
 ```bash
-git clone https://github.com/your-username/kernel-interface-utility-suite.git
-cd kernel-interface-utility-suite
+git clone https://github.com/SanketHajare44/Kernel-Interface-Utility-Suite
+cd Kernel-Interface-Utility-Suite
 make
 ```
 
@@ -225,9 +225,8 @@ $ catx source.txt
 
 ---
 
-## 📬 Contact
+## Author
 
-**Sanket Hajare**
-[LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/your-username)
-
----
+**Sanket Sadashiv Hajare**  
+GitHub : [Link](https://github.com/SanketHajare44)  
+LinkedIn : [Link](https://www.linkedin.com/in/sankethajare/)
